@@ -19,7 +19,10 @@ import {FavoriteNumber} from '../favorite-number'
 
 test('renders a number input with a label "Favorite Number"', () => {
   const {getByLabelText} = render(<FavoriteNumber />)
+  // debug: an option you can destrucutre out of render
+  // debug() // displays what the dom node is at that given time
   const input = getByLabelText(/favorite number/i) // case independent
+  // debug(input) // can also pass in a specific subset of your component
   // get the input associated with this label text; hitting 2 birds w. one stone
   expect(input).toHaveAttribute('type', 'number')
 })
