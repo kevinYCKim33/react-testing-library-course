@@ -1,6 +1,8 @@
+// 15 of 41 Test componentDidCatch Handler Error Boundaries with React Testing Library
 import React from 'react'
 import {reportError} from './api'
 
+// report error to server
 class ErrorBoundary extends React.Component {
   state = {hasError: false}
   componentDidCatch(error, info) {

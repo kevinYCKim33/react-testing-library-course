@@ -1,14 +1,23 @@
+// 15 of 41 Test componentDidCatch Handler Error Boundaries with React Testing Library
 import React from 'react'
 import {render} from '@testing-library/react'
-import {reportError as mockReportError} from '../api'
+import {reportError as mockReportError} from '../api' // this gets mocked
 import {ErrorBoundary} from '../error-boundary'
 
-jest.mock('../api')
+// async function reportError() {
+//   await sleep(1000)
+//   return {success: true}
+// }
 
+jest.mock('../api') // 1. because you're mocking everything from ../api
+
+// ensure all the mocks have all been cleared
+// make sure the mockReportError is not leaking out in other tests
 afterEach(() => {
   jest.clearAllMocks()
 })
 
+// test only component
 function Bomb({shouldThrow}) {
   if (shouldThrow) {
     throw new Error('💣')
@@ -18,7 +27,7 @@ function Bomb({shouldThrow}) {
 }
 
 test('calls reportError and renders that there was a problem', () => {
-  mockReportError.mockResolvedValueOnce({success: true})
+  mockReportError.mockResolvedValueOnce({success: true}) //mockResolved since it was a promise
   const {rerender} = render(
     <ErrorBoundary>
       <Bomb />
