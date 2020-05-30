@@ -21,7 +21,7 @@ test('entering an invalid value shows an error message', () => {
 
 // queryBy vs getBy
 // use queryBy: when trying to prove that something doesn't exist
-// use getBy: for everything else
+// use getBy: for everything else; error display much clearer
 
 /*
 <body>
