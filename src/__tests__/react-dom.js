@@ -4,14 +4,21 @@
 // expect.extend({toHaveAttribute, toHaveTextContent})
 
 import React from 'react'
-import ReactDOM from 'react-dom'
-import {getQueriesForElement} from '@testing-library/dom'
+// import ReactDOM from 'react-dom'  // needless after importing RTL
+// import {getQueriesForElement} from '@testing-library/dom' // needless after importing RTL
+import {render} from '@testing-library/react'
 import {FavoriteNumber} from '../favorite-number'
 
+// RTL render in a nutshell
+// function render(ui) {
+//   const container = document.createElement('div')
+//   ReactDOM.render(ui, container)
+//   const queries = getQueriesForElement(container)
+//   return {container, ...queries} // i.e. getByLabelText
+// }
+
 test('renders a number input with a label "Favorite Number"', () => {
-  const div = document.createElement('div')
-  ReactDOM.render(<FavoriteNumber />, div)
-  const {getByLabelText} = getQueriesForElement(div)
+  const {getByLabelText} = render(<FavoriteNumber />)
   const input = getByLabelText(/favorite number/i) // case independent
   // get the input associated with this label text; hitting 2 birds w. one stone
   expect(input).toHaveAttribute('type', 'number')
