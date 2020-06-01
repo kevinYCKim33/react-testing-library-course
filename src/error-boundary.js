@@ -1,4 +1,6 @@
 // 15 of 41 Test componentDidCatch Handler Error Boundaries with React Testing Library
+// 16 of 41 Hide console.error Logs when Testing Error Boundaries with jest.spyOn ==> error-boundary-02.js
+
 import React from 'react'
 import {reportError} from './api'
 

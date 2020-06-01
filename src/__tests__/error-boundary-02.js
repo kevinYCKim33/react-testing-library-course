@@ -1,3 +1,4 @@
+// 16 of 41 Hide console.error Logs when Testing Error Boundaries with jest.spyOn
 import React from 'react'
 import {render} from '@testing-library/react'
 import {reportError as mockReportError} from '../api'
@@ -6,15 +7,15 @@ import {ErrorBoundary} from '../error-boundary'
 jest.mock('../api')
 
 beforeAll(() => {
-  jest.spyOn(console, 'error').mockImplementation(() => {})
+  jest.spyOn(console, 'error').mockImplementation(() => {}) // any console.lerror messages just blank out
 })
 
 afterAll(() => {
-  console.error.mockRestore()
+  console.error.mockRestore() // restore console.error for whatever it is
 })
 
 afterEach(() => {
-  jest.clearAllMocks()
+  jest.clearAllMocks() // just a solid cleanup effect
 })
 
 function Bomb({shouldThrow}) {
