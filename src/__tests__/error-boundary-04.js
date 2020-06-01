@@ -1,3 +1,4 @@
+// 18 of 41 Use React Testing Library's Wrapper Option to Simplify Using rerender
 import React from 'react'
 import {render, fireEvent} from '@testing-library/react'
 import {reportError as mockReportError} from '../api'
@@ -27,12 +28,16 @@ function Bomb({shouldThrow}) {
 
 test('calls reportError and renders that there was a problem', () => {
   mockReportError.mockResolvedValueOnce({success: true})
-  const {rerender, getByText, queryByText, getByRole, queryByRole} = render(
-    <Bomb />,
-    {wrapper: ErrorBoundary},
-  )
+  const {
+    rerender,
+    getByText,
+    queryByText,
+    getByRole,
+    queryByRole,
+  } = render(<Bomb />, {wrapper: ErrorBoundary}) //jackpot!
 
-  rerender(<Bomb shouldThrow={true} />)
+  // much cleaner syntax
+  rerender(<Bomb shouldThrow={true} />) // no need to rerender the wrapper!
 
   const error = expect.any(Error)
   const info = {componentStack: expect.stringContaining('Bomb')}
