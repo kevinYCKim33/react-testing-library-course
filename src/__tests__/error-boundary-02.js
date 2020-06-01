@@ -1,4 +1,5 @@
 // 16 of 41 Hide console.error Logs when Testing Error Boundaries with jest.spyOn
+
 import React from 'react'
 import {render} from '@testing-library/react'
 import {reportError as mockReportError} from '../api'
