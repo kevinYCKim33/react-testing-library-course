@@ -1,3 +1,4 @@
+// 22. Test Drive Mocking react-router’s Redirect Component on a Form Submission
 import React from 'react'
 import {Redirect} from 'react-router'
 import {savePost} from './api'
@@ -15,10 +16,10 @@ function Editor({user}) {
       authorId: user.id,
     }
     setIsSaving(true)
-    savePost(newPost).then(() => setRedirect(true))
+    savePost(newPost).then(() => setRedirect(true)) // this is async
   }
   if (redirect) {
-    return <Redirect to="/" />
+    return <Redirect to="/" /> // yes pretty cool
   }
   return (
     <form onSubmit={handleSubmit}>
