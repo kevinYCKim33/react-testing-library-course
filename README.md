@@ -40,3 +40,51 @@ _Course material for testing React components using react-testing-library_
 > Note: the setup for this project uses kcd-scripts. Don't worry about that. You
 > can learn about how to configure jest properly in the "Configure Jest for
 > Testing JavaScript Applications" module of TestingJavaScript.com
+
+1. Intro to Test React Components with Jest and React Testing Library
+2. Render a React Component for Testing
+3. Use Jest DOM for Improved Assertions
+4. Use DOM Testing Library to Write More Maintainable React Tests
+5. Use React Testing Library to Render and Test React Components
+6. Debug the DOM State During Tests using React Testing Library’s debug Function
+7. Test React Component Event Handlers with fireEvent from React Testing Library
+8. Improve Test Confidence with the User Event Module
+9. Test Prop Updates with React Testing Library
+10. Assert That Something is NOT Rendered with React Testing Library
+11. Test Accessibility of Rendered React Components with jest-axe
+12. Mock HTTP Requests with jest.mock in React Component Tests
+13. Mock HTTP Requests with Dependency Injection in React Component Tests
+14. Mock react-transition-group in React Component Tests with jest.mock
+15. Test componentDidCatch Handler Error Boundaries with React Testing Library
+16. Hide console.error Logs when Testing Error Boundaries with jest.spyOn
+17. Ensure Error Boundaries Can Successfully Recover from Errors
+18. Use React Testing Library’s Wrapper Option to Simplify using rerender
+19. Test Drive the Development of a React Form with React Testing Library
+20. Test Drive the Submission of a React Form with React Testing Library
+21. Test Drive the API Call of a React Form with React Testing Library
+22. Test Drive Mocking react-router’s Redirect Component on a Form Submission
+23. Test Drive Assertions with Dates in React
+24. Use Generated Data in Tests with tests-data-bot to Improve Test
+    Maintainability
+25. Test Drive Error State with React Testing Library
+26. Write a Custom Render Function to Share Code between Tests and Simplify
+    Tests
+27. Test React Components that Use the react-router Router Provider with
+    createMemoryHistory
+28. Initialize the `history` Object with a Bad Entry to Test the react-router
+    no-match Route
+29. Create a Custom render Function to Simplify Tests of react-router Components
+30. Test a Redux Connected React Component
+31. Test a Redux Connected React Component with Initialized State
+32. Create a Custom Render Function to Simplify Tests of Redux Components
+33. Test a Custom React Hook with React’s Act Utility and a Test Component
+34. Write a Setup Function to Reduce Duplication of Testing Custom React Hooks
+35. Test a Custom React Hook with renderHook from React Hooks Testing Library
+36. Test Updates to Your Custom React Hook with rerender from React Hooks
+    Testing Library
+37. Test React Portals with within from React Testing Library
+38. Test Unmounting a React Component with React Testing Library
+39. Write React Application Integration Tests with React Testing Library
+40. Improve Reliability of Integration Tests using find\* Queries from React
+    Testing Library
+41. Improve Reliability of Integration Tests Using the User Event Module
