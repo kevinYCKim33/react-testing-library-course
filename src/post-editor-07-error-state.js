@@ -18,10 +18,11 @@ function Editor({user}) {
     }
     setIsSaving(true)
     savePost(newPost).then(
-      () => setRedirect(true),
+      () => setRedirect(true), // comma is clutch
       response => {
+        // second is the catch part of promise Kyle Simpson!
         setIsSaving(false)
-        setError(response.data.error)
+        setError(response.data.error) // clever...no catch needed?
       },
     )
   }

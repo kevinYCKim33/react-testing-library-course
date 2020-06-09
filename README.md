@@ -136,24 +136,28 @@ _Course material for testing React components using react-testing-library_
 - `tdd-06-generate-data.js`
 
 25. Test Drive Error State with React Testing Library
+
+- `tdd-07-error-state.js`
+
 26. Write a Custom Render Function to Share Code between Tests and Simplify
     Tests
-27. Test React Components that Use the react-router Router Provider with
+
+27) Test React Components that Use the react-router Router Provider with
     createMemoryHistory
-28. Initialize the `history` Object with a Bad Entry to Test the react-router
+28) Initialize the `history` Object with a Bad Entry to Test the react-router
     no-match Route
-29. Create a Custom render Function to Simplify Tests of react-router Components
-30. Test a Redux Connected React Component
-31. Test a Redux Connected React Component with Initialized State
-32. Create a Custom Render Function to Simplify Tests of Redux Components
-33. Test a Custom React Hook with React’s Act Utility and a Test Component
-34. Write a Setup Function to Reduce Duplication of Testing Custom React Hooks
-35. Test a Custom React Hook with renderHook from React Hooks Testing Library
-36. Test Updates to Your Custom React Hook with rerender from React Hooks
+29) Create a Custom render Function to Simplify Tests of react-router Components
+30) Test a Redux Connected React Component
+31) Test a Redux Connected React Component with Initialized State
+32) Create a Custom Render Function to Simplify Tests of Redux Components
+33) Test a Custom React Hook with React’s Act Utility and a Test Component
+34) Write a Setup Function to Reduce Duplication of Testing Custom React Hooks
+35) Test a Custom React Hook with renderHook from React Hooks Testing Library
+36) Test Updates to Your Custom React Hook with rerender from React Hooks
     Testing Library
-37. Test React Portals with within from React Testing Library
-38. Test Unmounting a React Component with React Testing Library
-39. Write React Application Integration Tests with React Testing Library
-40. Improve Reliability of Integration Tests using find\* Queries from React
+37) Test React Portals with within from React Testing Library
+38) Test Unmounting a React Component with React Testing Library
+39) Write React Application Integration Tests with React Testing Library
+40) Improve Reliability of Integration Tests using find\* Queries from React
     Testing Library
-41. Improve Reliability of Integration Tests Using the User Event Module
+41) Improve Reliability of Integration Tests Using the User Event Module
