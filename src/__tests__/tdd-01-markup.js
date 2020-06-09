@@ -1,4 +1,4 @@
-// 19 of 41 Test Drive the Development of a React Form with React Testing Library
+// 19. Test Drive the Development of a React Form with React Testing Library
 import React from 'react'
 import {render} from '@testing-library/react'
 import {Editor} from '../post-editor-01-markup'

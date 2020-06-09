@@ -1,4 +1,4 @@
-// 18 of 41 Use React Testing Library's Wrapper Option to Simplify Using rerender
+// 18. Use React Testing Library’s Wrapper Option to Simplify using rerender
 import React from 'react'
 import {render, fireEvent} from '@testing-library/react'
 import {reportError as mockReportError} from '../api'

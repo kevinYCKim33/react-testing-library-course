@@ -1,4 +1,4 @@
-// RTL 13 of 41 Mock HTTP Requests with Dependency Injection in React Component Tests
+// 13. Mock HTTP Requests with Dependency Injection in React Component Tests
 import React from 'react'
 import {render, fireEvent, wait} from '@testing-library/react'
 import {GreetingLoader} from '../greeting-loader-02-dependency-injection'

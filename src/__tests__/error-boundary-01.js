@@ -1,4 +1,4 @@
-// 15 of 41 Test componentDidCatch Handler Error Boundaries with React Testing Library
+// 15. Test componentDidCatch Handler Error Boundaries with React Testing Library
 import React from 'react'
 import {render} from '@testing-library/react'
 import {reportError as mockReportError} from '../api' // this gets mocked

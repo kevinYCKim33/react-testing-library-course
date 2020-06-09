@@ -1,4 +1,4 @@
-// 21 of 41 Test Drive the API Call of a React Form with React Testing Library
+// 21. Test Drive the API Call of a React Form with React Testing Library
 
 import React from 'react'
 import {render, fireEvent} from '@testing-library/react'

@@ -1,3 +1,4 @@
+// 2. Render a React Component for Testing
 // Kent already hooked up the jest config to have this
 // it's in his kcd-scripts/jest
 // import {toHaveAttribute, toHaveTextContent} from '@testing-library/jest-dom'

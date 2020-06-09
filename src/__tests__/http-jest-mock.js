@@ -1,4 +1,4 @@
-// vid 12 of 41 RTL
+// 12. Mock HTTP Requests with jest.mock in React Component Tests
 import React from 'react'
 import {render, fireEvent, wait} from '@testing-library/react'
 import {loadGreeting as mockLoadGreeting} from '../api' // because of jest.mock, this imported fcn will be a jest mock fcn

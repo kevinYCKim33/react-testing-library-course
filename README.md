@@ -43,27 +43,93 @@ _Course material for testing React components using react-testing-library_
 
 1. Intro to Test React Components with Jest and React Testing Library
 2. Render a React Component for Testing
+
+- `react-dom.js`
+
 3. Use Jest DOM for Improved Assertions
+
+- `jest-dom.js`
+
 4. Use DOM Testing Library to Write More Maintainable React Tests
+
+- `dom-testing-library.js`
+
 5. Use React Testing Library to Render and Test React Components
+
+- `react-testing-library.js`
+
 6. Debug the DOM State During Tests using React Testing Library’s debug Function
+
+- `react-testing-library.js`
+
 7. Test React Component Event Handlers with fireEvent from React Testing Library
+
+- `state.js`
+
 8. Improve Test Confidence with the User Event Module
+
+- `state.js`
+
 9. Test Prop Updates with React Testing Library
+
+- `prop-updates-01.js`
+
 10. Assert That Something is NOT Rendered with React Testing Library
+
+- `prop-updates-02.js`
+
 11. Test Accessibility of Rendered React Components with jest-axe
+
+- `a11y.js`
+
 12. Mock HTTP Requests with jest.mock in React Component Tests
+
+- `http-jest-mock.js`
+
 13. Mock HTTP Requests with Dependency Injection in React Component Tests
+
+- `dependency-injection.js`
+
 14. Mock react-transition-group in React Component Tests with jest.mock
+
+- `mock-components.js`
+
 15. Test componentDidCatch Handler Error Boundaries with React Testing Library
+
+- `error-boundary-01.js`
+
 16. Hide console.error Logs when Testing Error Boundaries with jest.spyOn
+
+- `error-boundary-02.js`
+
 17. Ensure Error Boundaries Can Successfully Recover from Errors
+
+- `error-boundary-03.js`
+
 18. Use React Testing Library’s Wrapper Option to Simplify using rerender
+
+- `error-boundary-04.js`
+
 19. Test Drive the Development of a React Form with React Testing Library
+
+- `tdd-01-markup.js`
+
 20. Test Drive the Submission of a React Form with React Testing Library
+
+- `tdd-02-state.js`
+
 21. Test Drive the API Call of a React Form with React Testing Library
+
+- `tdd-03-api.js`
+
 22. Test Drive Mocking react-router’s Redirect Component on a Form Submission
+
+- `tdd-04-router-redirect.js`
+
 23. Test Drive Assertions with Dates in React
+
+- `tdd-05-dates.js`
+
 24. Use Generated Data in Tests with tests-data-bot to Improve Test
     Maintainability
 25. Test Drive Error State with React Testing Library

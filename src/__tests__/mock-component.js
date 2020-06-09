@@ -1,4 +1,4 @@
-// 14 of 41 Mock react-transition-group in React Component Tests with jest.mock
+// 14. Mock react-transition-group in React Component Tests with jest.mock
 import React from 'react'
 import {render, fireEvent} from '@testing-library/react'
 import {HiddenMessage} from '../hidden-message'

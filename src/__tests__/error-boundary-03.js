@@ -1,3 +1,4 @@
+// 17. Ensure Error Boundaries Can Successfully Recover from Errors
 import React from 'react'
 import {render, fireEvent} from '@testing-library/react'
 import {reportError as mockReportError} from '../api'

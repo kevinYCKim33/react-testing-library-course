@@ -1,3 +1,4 @@
+// 11. Test Accessibility of Rendered React Components with jest-axe
 import React from 'react'
 import {render} from '@testing-library/react'
 import {axe} from 'jest-axe'
