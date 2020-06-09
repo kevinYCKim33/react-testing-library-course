@@ -132,6 +132,9 @@ _Course material for testing React components using react-testing-library_
 
 24. Use Generated Data in Tests with tests-data-bot to Improve Test
     Maintainability
+
+- `tdd-06-generate-data.js`
+
 25. Test Drive Error State with React Testing Library
 26. Write a Custom Render Function to Share Code between Tests and Simplify
     Tests
