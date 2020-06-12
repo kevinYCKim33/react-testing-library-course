@@ -155,6 +155,9 @@ _Course material for testing React components using react-testing-library_
 - `react-router-02.js`
 
 29. Create a Custom render Function to Simplify Tests of react-router Components
+
+- `react-router-03.js`
+
 30. Test a Redux Connected React Component
 31. Test a Redux Connected React Component with Initialized State
 32. Create a Custom Render Function to Simplify Tests of Redux Components

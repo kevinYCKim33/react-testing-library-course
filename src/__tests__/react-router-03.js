@@ -1,3 +1,4 @@
+// 29. Create a Custom render Function to Simplify Tests of react-router Components
 import React from 'react'
 import {Router} from 'react-router-dom'
 import {createMemoryHistory} from 'history'
@@ -6,6 +7,10 @@ import {Main} from '../main'
 
 // normally you'd put this logic in your test utility file so it can be used
 // for all of your tests.
+// ui in render(ui, options) is like <Main />
+
+// some pretty obnoxious render function to allow users to test rerendering...
+// for now I don't think I'll mind a little extra repetitions...
 function render(
   ui,
   {
@@ -38,6 +43,7 @@ test('main renders about and home and I can navigate to those pages', () => {
   // about screen
 })
 
+// argghhh the render taking optional second argument!
 test('landing on a bad page shows no match component', () => {
   const {getByRole} = render(<Main />, {
     route: '/something-that-does-not-match',
