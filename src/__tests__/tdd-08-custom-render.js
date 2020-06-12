@@ -1,3 +1,4 @@
+// 26. Write a Custom Render Function to Share Code between Tests and Simplify Tests
 import React from 'react'
 import {render, fireEvent, wait} from '@testing-library/react'
 import {build, fake, sequence} from 'test-data-bot'
@@ -26,11 +27,13 @@ const userBuilder = build('User').fields({
   id: sequence(s => `user-${s}`),
 })
 
+// the only new thing here...
 function renderEditor() {
   const fakeUser = userBuilder()
-  const utils = render(<Editor user={fakeUser} />)
-  const fakePost = postBuilder()
+  const utils = render(<Editor user={fakeUser} />) // he undestructures here...
+  const fakePost = postBuilder() // oh ooops look up!
 
+  // imagine these vanilla fields' values getting set to these fakePost vals
   utils.getByLabelText(/title/i).value = fakePost.title
   utils.getByLabelText(/content/i).value = fakePost.content
   utils.getByLabelText(/tags/i).value = fakePost.tags.join(', ')
