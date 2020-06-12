@@ -151,6 +151,9 @@ _Course material for testing React components using react-testing-library_
 
 28. Initialize the `history` Object with a Bad Entry to Test the react-router
     no-match Route
+
+- `react-router-02.js`
+
 29. Create a Custom render Function to Simplify Tests of react-router Components
 30. Test a Redux Connected React Component
 31. Test a Redux Connected React Component with Initialized State
