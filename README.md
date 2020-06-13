@@ -167,6 +167,9 @@ _Course material for testing React components using react-testing-library_
 - `redux-02.js`
 
 32. Create a Custom Render Function to Simplify Tests of Redux Components
+
+- `redux-03.js`
+
 33. Test a Custom React Hook with React’s Act Utility and a Test Component
 34. Write a Setup Function to Reduce Duplication of Testing Custom React Hooks
 35. Test a Custom React Hook with renderHook from React Hooks Testing Library
