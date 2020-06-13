@@ -196,6 +196,9 @@ _Course material for testing React components using react-testing-library_
 - `unmounting.js`
 
 39. Write React Application Integration Tests with React Testing Library
+
+- `app-01.js`
+
 40. Improve Reliability of Integration Tests using find\* Queries from React
     Testing Library
 41. Improve Reliability of Integration Tests Using the User Event Module
