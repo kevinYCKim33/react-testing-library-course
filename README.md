@@ -179,6 +179,9 @@ _Course material for testing React components using react-testing-library_
 - `custom-hook-02.js`
 
 35. Test a Custom React Hook with renderHook from React Hooks Testing Library
+
+- `custom-hook-03.js`
+
 36. Test Updates to Your Custom React Hook with rerender from React Hooks
     Testing Library
 37. Test React Portals with within from React Testing Library

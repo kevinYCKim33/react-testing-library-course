@@ -1,6 +1,9 @@
-import {renderHook, act} from '@testing-library/react-hooks'
+// 35. Test a Custom React Hook with renderHook from React Hooks Testing Library
+import {renderHook, act} from '@testing-library/react-hooks' // wahhhhhhh???
 import {useCounter} from '../use-counter'
 
+// stupidly clean
+// renderHook ~~ basically custom-hook-02.js
 test('exposes the count and increment/decrement functions', () => {
   const {result} = renderHook(useCounter)
   expect(result.current.count).toBe(0)
