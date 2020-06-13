@@ -205,3 +205,5 @@ _Course material for testing React components using react-testing-library_
 - `app-02.js`
 
 41. Improve Reliability of Integration Tests Using the User Event Module
+
+- `app-03.js`
