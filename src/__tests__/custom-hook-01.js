@@ -22,6 +22,7 @@ test('exposes the count and increment/decrement functions', () => {
     result = useCounter()
     return null
   }
+  // crazy way to test hooks!
   render(<TestComponent />)
   expect(result.count).toBe(0)
   act(() => result.increment()) // act??
