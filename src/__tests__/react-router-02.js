@@ -1,3 +1,4 @@
+// 28. Initialize the `history` Object with a Bad Entry to Test the react-router no-match Route
 import React from 'react'
 import {Router} from 'react-router-dom'
 import {createMemoryHistory} from 'history'
@@ -16,6 +17,8 @@ test('main renders about and home and I can navigate to those pages', () => {
   expect(getByRole('heading')).toHaveTextContent(/about/i)
 })
 
+// new test
+// this one is very easy
 test('landing on a bad page shows no match component', () => {
   const history = createMemoryHistory({
     initialEntries: ['/something-that-does-not-match'],

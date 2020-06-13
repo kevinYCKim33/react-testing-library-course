@@ -1,3 +1,4 @@
+// 3. Use Jest DOM for Improved Assertions
 import React from 'react'
 import ReactDOM from 'react-dom'
 import {FavoriteNumber} from '../favorite-number'

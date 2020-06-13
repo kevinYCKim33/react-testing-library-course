@@ -1,19 +1,20 @@
+// 21 of 41 Test Drive the API Call of a React Form with React Testing Library
 import React from 'react'
-import {savePost} from './api'
+import {savePost} from './api' // pretend it does http request
 
 function Editor({user}) {
   const [isSaving, setIsSaving] = React.useState(false)
   function handleSubmit(e) {
     e.preventDefault()
-    const {title, content, tags} = e.target.elements
+    const {title, content, tags} = e.target.elements // didn't even know you could do this! gets all form elements by name
     const newPost = {
       title: title.value,
       content: content.value,
       tags: tags.value.split(',').map(t => t.trim()),
-      authorId: user.id,
+      authorId: user.id, // prop of Editor
     }
     setIsSaving(true)
-    savePost(newPost)
+    savePost(newPost) // just a fake posting of data // this needs to be faked in testing
   }
   return (
     <form onSubmit={handleSubmit}>

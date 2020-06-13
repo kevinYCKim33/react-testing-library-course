@@ -1,3 +1,4 @@
+// 4. Use DOM Testing Library to Write More Maintainable React Tests
 import React from 'react'
 import ReactDOM from 'react-dom'
 import {getQueriesForElement} from '@testing-library/dom'

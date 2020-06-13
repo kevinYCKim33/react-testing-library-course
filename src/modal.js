@@ -14,11 +14,12 @@ if (!modalRoot) {
 function Modal({children}) {
   const el = React.useRef(document.createElement('div'))
   React.useLayoutEffect(() => {
+    // oof...
     const currentEl = el.current
     modalRoot.appendChild(currentEl)
     return () => modalRoot.removeChild(currentEl)
   }, [])
-  return ReactDOM.createPortal(children, el.current)
+  return ReactDOM.createPortal(children, el.current) // create portal!
 }
 
 export {Modal}

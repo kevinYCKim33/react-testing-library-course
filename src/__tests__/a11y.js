@@ -1,8 +1,11 @@
+// 11. Test Accessibility of Rendered React Components with jest-axe
 import React from 'react'
 import {render} from '@testing-library/react'
 import {axe} from 'jest-axe'
-
+// import 'jest-axe/extend-expect' // already put in via kcd package
+// gives toHaveNoViolations
 function InaccessibleForm() {
+  // input is not labeled
   return (
     <form>
       <input placeholder="email" />

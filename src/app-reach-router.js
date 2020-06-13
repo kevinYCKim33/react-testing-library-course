@@ -1,5 +1,7 @@
 import React from 'react'
-import {Router, Link, navigate} from '@reach/router'
+import {Router, Link, navigate} from '@reach/router' // why reach??
+// just to prove that the implementations don't matter
+
 import {submitForm} from './api'
 
 const MultiPageForm = React.createContext()

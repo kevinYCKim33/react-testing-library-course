@@ -1,3 +1,4 @@
+// 25. Test Drive Error State with React Testing Library
 import React from 'react'
 import {render, fireEvent, wait} from '@testing-library/react'
 import {build, fake, sequence} from 'test-data-bot'
@@ -57,16 +58,20 @@ test('renders a form with title, content, tags, and a submit button', async () =
   await wait(() => expect(MockRedirect).toHaveBeenCalledWith({to: '/'}, {}))
 })
 
+// new code; entirely new test case; async...we're waiting for promise to get rejected
+// happy path is tested in above...
+// can get rid of a lot more stuff...
 test('renders an error message from the server', async () => {
   const testError = 'test error'
-  mockSavePost.mockRejectedValueOnce({data: {error: testError}})
+  mockSavePost.mockRejectedValueOnce({data: {error: testError}}) // woah mockRejected! and mock an error!
   const fakeUser = userBuilder()
   const {getByText, findByRole} = render(<Editor user={fakeUser} />)
   const submitButton = getByText(/submit/i)
 
   fireEvent.click(submitButton)
 
-  const postError = await findByRole('alert')
+  const postError = await findByRole('alert') // always with those awaits... //
+  // findByRole keep trying...error out...hence await
   expect(postError).toHaveTextContent(testError)
   expect(submitButton).not.toBeDisabled()
 })
