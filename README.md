@@ -159,7 +159,13 @@ _Course material for testing React components using react-testing-library_
 - `react-router-03.js`
 
 30. Test a Redux Connected React Component
+
+- `redux-01.js`
+
 31. Test a Redux Connected React Component with Initialized State
+
+- `redux-02.js`
+
 32. Create a Custom Render Function to Simplify Tests of Redux Components
 33. Test a Custom React Hook with React’s Act Utility and a Test Component
 34. Write a Setup Function to Reduce Duplication of Testing Custom React Hooks
