@@ -12,8 +12,8 @@ function Countdown() {
       } else {
         setRemainingTime(newRemainingTime)
       }
-    })
-    return () => clearInterval(interval)
+    }) // doesn't setInterval require an interval limit??
+    return () => clearInterval(interval) // what we're really testing
   }, [])
   return remainingTime
 }

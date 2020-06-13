@@ -192,6 +192,9 @@ _Course material for testing React components using react-testing-library_
 - `portals.js`
 
 38. Test Unmounting a React Component with React Testing Library
+
+- `unmounting.js`
+
 39. Write React Application Integration Tests with React Testing Library
 40. Improve Reliability of Integration Tests using find\* Queries from React
     Testing Library
