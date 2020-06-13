@@ -1,8 +1,8 @@
 import React from 'react'
-import {useSelector, useDispatch} from 'react-redux'
+import {useSelector, useDispatch} from 'react-redux' // some clean hooks!
 
 function Counter() {
-  const count = useSelector(state => state.count)
+  const count = useSelector(state => state.count) // ~mapStateToProps...I want to connect straight to my store, probably mapped in <Provider />
   const dispatch = useDispatch()
   const increment = () => dispatch({type: 'INCREMENT'})
   const decrement = () => dispatch({type: 'DECREMENT'})
