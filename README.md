@@ -201,4 +201,7 @@ _Course material for testing React components using react-testing-library_
 
 40. Improve Reliability of Integration Tests using find\* Queries from React
     Testing Library
+
+- `app-02.js`
+
 41. Improve Reliability of Integration Tests Using the User Event Module
