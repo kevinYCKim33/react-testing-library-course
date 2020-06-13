@@ -188,6 +188,9 @@ _Course material for testing React components using react-testing-library_
 - `custom-hook-04.js`
 
 37. Test React Portals with within from React Testing Library
+
+- `portals.js`
+
 38. Test Unmounting a React Component with React Testing Library
 39. Write React Application Integration Tests with React Testing Library
 40. Improve Reliability of Integration Tests using find\* Queries from React
