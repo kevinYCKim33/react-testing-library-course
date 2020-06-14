@@ -1,3 +1,4 @@
+// 8. Improve Test Confidence with the User Event Module
 import React from 'react'
 import user from '@testing-library/user-event'
 import {render} from '@testing-library/react'
